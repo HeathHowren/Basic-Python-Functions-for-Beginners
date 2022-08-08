@@ -5,8 +5,7 @@ I developed most of the functions for an intro to Python course, so they aren't 
 
 #### Triangle Test
 ```python
-def Validate(sideA, sideB, sideC):
-    # determing if the 3 sides are capable of making a triangle
+def Validate(sideA, sideB, sideC): # determing if the 3 sides are capable of making a triangle
     if (((sideA + sideB) >= sideC) and ((sideB + sideC) >= sideA) and ((sideC + sideA) >= sideB)):
         return True
     else:
@@ -20,8 +19,7 @@ def ComputeArea(sideA, sideB, sideC): # mathmatically determing area of the tira
 ```
 #### Smallest Triangle Side
 ```python
-def findMin(sideA, sideB, sideC):
-    # determining which length is the smallest
+def findMin(sideA, sideB, sideC): # determining which length is the smallest
     if (sideA <= sideB and sideB <= sideC):
         return sideA
     elif (sideB <= sideA and sideA <= sideC):
@@ -31,8 +29,7 @@ def findMin(sideA, sideB, sideC):
 ```
 #### Largest Trianlge Side
 ```python
-def findMax(sideA, sideB, sideC):
-    # determining which length is the largest
+def findMax(sideA, sideB, sideC): # determining which length is the largest
     if (sideA >= sideB and sideB >= sideC):
         return sideA
     elif (sideB >= sideA and sideA >= sideC):
@@ -64,7 +61,7 @@ def Average(lst): # function that will compute the average of the list
 ```
 #### Convert Steps to Miles
 ```python
-def StepsToMiles(lst):
+def StepsToMiles(lst): # function for converting steps walked to miles
     miles_walked = []
     for i in range(len(lst)):
         miles_walked.append(lst[i] * (1/2000))
@@ -110,9 +107,9 @@ def FindChar(inputChar, inputString): # function for computing the amount of cha
 ```
 ### Apply (hardcoded) Discount to List
 ```python
-def discount(lst): # defining the discount function take 30% off the total
+def discount(lst): # defining the discount function take a hardcoded (10) percent off the total
     update = []
     for i in range(len(lst)):
-        update.append((lst[i] - (lst[i] * 0.30))) # adding each item to the new list after discount rate is applied
+        update.append((lst[i] - (lst[i] * 0.10))) # adding each item to the new list after discount rate is applied
     return update
 ```
